@@ -5,7 +5,7 @@
     <title>D'Aondhraoi ~그대만의 마법사~</title>
     
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@1,700&family=Hahmlet:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@1,700&family=Hahmlet:wght@500&display=swap');
     </style>
 
   </head>
@@ -238,7 +238,7 @@ function toggleSelect2() {
   <option value="múscail">깨워라</option>
   <option value="can">노래하라</option>
   <option value="athbheoigh">되살려라</option>
-  <option value="clois">들어라</option>
+  <option value="éist le">들어라</option>
   <option value="coisc">막아라</option>
   <option value="las">밝혀라</option>
   <option value="gearr">베어라</option>
@@ -266,7 +266,7 @@ function toggleSelect2() {
 <button id="submit" onclick="SubmitCheck()" style="height:40pt; font-size:20pt; font-family: 'Hahmlet', serif;"> 의식을 시작한다 </button>
 <button id="submit" onclick="SubmitCancel()" style="height:40pt; font-size:20pt; font-family: 'Hahmlet', serif;"> 의식을 그만둔다 </button>
 <p></p>
-<textarea type="text" id="spell" readonly placeholder="당신의 탄원입니다.&#10;Beidh sé do dhraíocht.&#10;소리내어 읽으세요." style="width:80vmin; height:30vh; font-size:20pt; font-family: 'Hahmlet', serif; resize:none;" /></textarea>
+<textarea type="text" id="spell" readonly placeholder="당신의 탄원입니다.&#10;Beidh sé do dhraíocht.&#10;소리내어 읽으세요." style="width:80vmin; height:30vh; font-size:20pt; text-align: center; font-family:'Cormorant Infant', 'Hahmlet', serif; resize:none;" /></textarea>
 <p></p>
 
 <p></p>
@@ -458,8 +458,8 @@ function SubmitCheck() {
   //imperative
   var imp_hangul = ""
 
-  var Imp = ["clúdaigh", "múscail", "can", "athbheoigh", "clois", "coisc", "las", "gearr", "feic", "bris", "glaoigh", "loisc", "neamhnigh", "geimhligh", "giollaigh", "mallaigh", "maraigh", "cosain", "fiach", "sáigh", "beannaigh", "leigheas"]
-  var ImpHan = ["클루다이", "무스칼", "칸", "아베오이", "클레쉬", "케쉬크", "라스", "기아르", "페크", "브리쉬", "글리", "레쉬크", "니아우니", "기블리", "기올라이", "말라이", "마라이", "코산", "피아흐", "사이", "비아나이", "레야스"]
+  var Imp = ["clúdaigh", "múscail", "can", "athbheoigh", "éist le", "coisc", "las", "gearr", "feic", "bris", "glaoigh", "loisc", "neamhnigh", "geimhligh", "giollaigh", "mallaigh", "maraigh", "cosain", "fiach", "sáigh", "beannaigh", "leigheas"]
+  var ImpHan = ["클루다이", "무스칼", "칸", "아베오이", "에쉬트 레", "케쉬크", "라스", "기아르", "페크", "브리쉬", "글리", "레쉬크", "니아우니", "기블리", "기올라이", "말라이", "마라이", "코산", "피아흐", "사이", "비아나이", "레야스"]
 
   for (var i in Imp) {
     if (imperative == Imp[i]) {
@@ -497,39 +497,6 @@ function SubmitCheck() {
     }
   }
 
-  if ((imperative == "éist le") && (possessive == "mo " || possessive == "do " || possessive == "a " || possessive == "m'" || possessive == "d'" || possessive == "ár ")) {
-    imperative = "éist"
-    imp_hangul = "에쉬트"
-
-    if (possessive == "mo ") {
-      possessive = "lem "
-      posacu_hangul = "렘 "
-    } else if (possessive == "do ") {
-      possessive = "led "
-      posacu_hangul = "레드 "
-    } else if (possessive == "a ") {
-      possessive = "lena "
-      posacu_hangul = "레나 "
-    } else if (possessive == "m'") {
-      possessive = "lem "
-      posacu_hangul = "렘 "
-    } else if (possessive == "d'") {
-      possessive = "led "
-      posacu_hangul = "레드 "
-    } else if (possessive == "ár") {
-      possessive = "lenár"
-      posacu_hangul = "레나르 "
-    }
-
-    for (var i in PosAcu) {
-      if (accusative == PosAcu[i]) {
-        posacu_hangul = posacu_hangul + PosAcuHan[i]
-        break
-     }
-    }
-
-  }
-
   //쉼표와 공백
   if (genitive == "") {
     vocative = vocative + ", "
@@ -563,7 +530,7 @@ function SubmitCheck() {
 
 
   var textbox_spell = document.getElementById("spell")
-  textbox_spell.value = (genitive_name + vocative_name + accusative_pronoun_name + possessive_name + accusative_name + imperative_name) + "\n" + (vocative + genitive + imperative + accusative_pronoun + possessive + accusative) + "\n" + (voc_hangul + gen_hangul + imp_hangul + accpro_hangul + posacu_hangul)
+  textbox_spell.value = "«"+(genitive_name + vocative_name + accusative_pronoun_name + possessive_name + accusative_name + imperative_name)+"»" + "\n" + (vocative + genitive + imperative + accusative_pronoun + possessive + accusative) + "\n" + (voc_hangul + gen_hangul + imp_hangul + accpro_hangul + posacu_hangul)
 }
 
 function SubmitCancel() {
