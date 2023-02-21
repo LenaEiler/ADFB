@@ -16,7 +16,7 @@
 <h1> 에린의 요정과 알반의 드높은 대지는 그대의 탄원을 듣고 있습니다. </h1>
 <h2 style="font-family: 'Cormorant Infant', serif;"> Tá sióga na hÉireann agus tíortha arda na hAlban ag éisteacht le do bhriocht. </h2>
 
-<img src = "https://postfiles.pstatic.net/MjAyMzAyMjFfMTcy/MDAxNjc2OTg5MTk3MzA2.M-zSAwjdtReFV931tljen2rLjOfL8c1jySIml4EY-2kg.urQSYTZYsZ6r79CwWDv9y-_J1kVua16auv9v9X2anhwg.PNG.linascita29/1.png?type=w580">
+<img src = "https://raw.githubusercontent.com/LenaEiler/ADFB/main/1.png">
 
 <h2> 속한 것 </h2>
 <h3> 불러낼 것이 무언가에 속해 있습니까? </h3>
@@ -75,7 +75,7 @@ function toggleSelect() {
 </script>
 
 <p></p>
-<img src = "https://postfiles.pstatic.net/MjAyMzAyMjFfMjY4/MDAxNjc2OTg5MTk5Nzg0.n-FHYxpURbEFir1Bz107xExXEfXZv4O50Gro8q4r0dYg.DQDO2Iz81CgZ_as_P3eweK83Dq0GDyo22Y0kv38v6nog.PNG.linascita29/2.png?type=w580">
+<img src = "https://raw.githubusercontent.com/LenaEiler/ADFB/main/2.png">
 
 <h2> 부를 것 </h2>
 <h3> 무엇을 불러낼 것입니까? </h3>
@@ -112,7 +112,7 @@ function toggleSelect() {
 </select>
 
 <p></p>
-<img src = "https://postfiles.pstatic.net/MjAyMzAyMjFfMjY4/MDAxNjc2OTg5MTk5Nzg0.n-FHYxpURbEFir1Bz107xExXEfXZv4O50Gro8q4r0dYg.DQDO2Iz81CgZ_as_P3eweK83Dq0GDyo22Y0kv38v6nog.PNG.linascita29/2.png?type=w580">
+<img src = "https://raw.githubusercontent.com/LenaEiler/ADFB/main/2.png">
 
 
 <h2> 향할 것 </h2>
@@ -218,7 +218,7 @@ function toggleSelect2() {
 </script>
 
 <p></p>
-<img src = "https://postfiles.pstatic.net/MjAyMzAyMjFfMjY4/MDAxNjc2OTg5MTk5Nzg0.n-FHYxpURbEFir1Bz107xExXEfXZv4O50Gro8q4r0dYg.DQDO2Iz81CgZ_as_P3eweK83Dq0GDyo22Y0kv38v6nog.PNG.linascita29/2.png?type=w580">
+<img src = "https://raw.githubusercontent.com/LenaEiler/ADFB/main/2.png">
 
 
 <h2> 원할 것 </h2>
@@ -250,7 +250,7 @@ function toggleSelect2() {
 </select>
 
 <p></p>
-<img src = "https://postfiles.pstatic.net/MjAyMzAyMjFfMjY4/MDAxNjc2OTg5MTk5Nzg0.n-FHYxpURbEFir1Bz107xExXEfXZv4O50Gro8q4r0dYg.DQDO2Iz81CgZ_as_P3eweK83Dq0GDyo22Y0kv38v6nog.PNG.linascita29/2.png?type=w580">
+<img src = "https://raw.githubusercontent.com/LenaEiler/ADFB/main/2.png">
 
 <p></p>
 
@@ -264,8 +264,7 @@ function toggleSelect2() {
 <textarea type="text" id="spell_hangul" rows=1 readonly placeholder="소리내어 읽으세요." style="width:720px; font-size:32px; font-family: 'Hahmlet', serif; resize:none;" /></textarea>
 
 <p></p>
-<img src = "https://postfiles.pstatic.net/MjAyMzAyMjFfMjY4/MDAxNjc2OTg5MTk5Nzg0.n-FHYxpURbEFir1Bz107xExXEfXZv4O50Gro8q4r0dYg.DQDO2Iz81CgZ_as_P3eweK83Dq0GDyo22Y0kv38v6nog.PNG.linascita29/2.png?type=w580">
-
+<img src = "https://raw.githubusercontent.com/LenaEiler/ADFB/main/2.png">
 <p></p>
 
 <script>
@@ -579,7 +578,7 @@ function SubmitCancel() {
 <p>*</p>
 <p>*</p>
 <p>*</p>
-<img src = "https://postfiles.pstatic.net/MjAyMzAyMjFfMjY4/MDAxNjc2OTg5MTk5Nzg0.n-FHYxpURbEFir1Bz107xExXEfXZv4O50Gro8q4r0dYg.DQDO2Iz81CgZ_as_P3eweK83Dq0GDyo22Y0kv38v6nog.PNG.linascita29/2.png?type=w580">
+<img src = "https://raw.githubusercontent.com/LenaEiler/ADFB/main/2.png">
 
 <h2>더 많은 존재의 이름을 알고 싶으신 분들은 <a href = "https://tumblbug.com/help242" target = "blank">이곳을</a> 방문해 주세요.</h2>
 <p>*</p>
