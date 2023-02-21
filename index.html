@@ -5,8 +5,7 @@
     <title>D'Aondhraoi ~그대만의 마법사~</title>
     
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@1,700&family=Hahmlet:wght@100;400&display=swap');
-
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@1,700&family=Hahmlet:wght@700&display=swap');
     </style>
 
   </head>
@@ -14,13 +13,16 @@
 
 <div style="text-align:center; color: #000000; font-size: 20pt; overflow-x: hidden;font-family: 'Hahmlet', serif;">
 
-<h1> 에린의 요정과 알반의 드높은 대지는 그대의 탄원을 듣고 있습니다. </h1>
-<h2 style="font-family: 'Cormorant Infant', serif;"> Tá sióga na hÉireann agus tíortha arda na hAlban ag éisteacht le do bhriocht. </h2>
-
+<font style="font-size:32pt"> 에린의 요정과 알반의 드높은 대지는 그대의 탄원을 듣고 있습니다. </font>
+<p></p>
+<font style="font-size:28pt; font-family: 'Cormorant Infant', serif;"> Tá sióga na hÉireann agus tíortha arda na hAlban ag éisteacht le do bhriocht. </font>
+<p></p>
 <img src = "https://raw.githubusercontent.com/LenaEiler/ADFB/main/1.png">
-
-<h2> 속한 것 </h2>
-<h3> 불러낼 것이 무언가에 속한 존재인가요? </h3>
+<p></p>
+<font style="font-size:28pt"> 속한 것 </font>
+<p></p>
+<font style="font-size:24pt"> 불러낼 것이 무언가에 속한 존재인가요? </font>
+<p></p>
 
 <label>
   <input type="radio" style="font-size:20pt; width:15pt; height:15pt" name="q1_enable" value="true" onclick="toggleSelect()" /> 예
@@ -32,7 +34,7 @@
 
 <p></p>
 
-<select id="q1_select" style="width:120pt; font-size:20pt" disabled>
+<select id="q1_select" style="width:120pt; font-size:20pt; font-family: 'Hahmlet', serif;" disabled>
   <option value="na habhann">강의</option>
   <option value="an chlaímh">검의</option>
   <option value="na cuimhne">기억의</option>
@@ -77,11 +79,13 @@ function toggleSelect() {
 
 <p></p>
 <img src = "https://raw.githubusercontent.com/LenaEiler/ADFB/main/2.png" style = "width:50vmin">
+<p></p>
+<font style="font-size:28pt"> 부를 것 </font>
+<p></p>
+<font style="font-size:24pt"> 무엇을 불러낼 것인가요? </font>
+<p></p>
 
-<h2> 부를 것 </h2>
-<h3> 무엇을 불러낼 것인가요? </h3>
-
-<select id="q2_select" style="width:120pt; font-size:20pt">
+<select id="q2_select" style="width:120pt; font-size:20pt; font-family: 'Hahmlet', serif;">
   <option value="A scáthán">거울이여</option>
   <option value="A chlaíomh">검이여</option>
   <option value="A eagla">공포여</option>
@@ -114,10 +118,11 @@ function toggleSelect() {
 
 <p></p>
 <img src = "https://raw.githubusercontent.com/LenaEiler/ADFB/main/2.png" style = "width:50vmin">
-
-
-<h2> 향할 것 </h2>
-<h3> 특별한 사람을 향하여 부르는 것인가요? </h3>
+<p></p>
+<font style="font-size:28pt"> 향할 것 </font>
+<p></p>
+<font style="font-size:24pt"> 특별한 사람을 겨냥하여 부르는 것인가요? </font>
+<p></p>
 <label>
   <input type="radio" name="q3_enable_pronoun_go" value="true" style="font-size:20pt; width:15pt; height:15pt" onclick="toggleSelect3()" /> 예
 </label>
@@ -127,7 +132,7 @@ function toggleSelect() {
 
 <p></p>
 
-<select id="q3_enable_pronoun" style="width:120pt; font-size:20pt" disabled>
+<select id="q3_enable_pronoun" style="width:120pt; font-size:20pt; font-family: 'Hahmlet', serif;" disabled>
   <option value="mé">나를</option>
   <option value="thú">너를</option>
   <option value="é">그를</option>
@@ -155,7 +160,9 @@ function toggleSelect() {
 
 <div id="q3_block">
 
-<h3> 누군가의 것을 위하여 부르는 것인가요? </h3>
+<p></p>
+<font style="font-size:24pt"> 누군가의 것을 위하여 부르는 것인가요? </font>
+<p></p>
 
 <label>
   <input type="radio" name="q3_enable" value="true" style="font-size:20pt; width:15pt; height:15pt" onclick="toggleSelect2()" /> 예
@@ -167,7 +174,7 @@ function toggleSelect() {
 
 <p></p>
 
-<select id="q3_select" disabled style="width:120pt; font-size:20pt">
+<select id="q3_select" disabled style="width:120pt; font-size:20pt; font-family: 'Hahmlet', serif;">
   <option value="moL">나의</option>
   <option value="doL">너의</option>
   <option value="aL">그의</option>
@@ -177,7 +184,7 @@ function toggleSelect() {
   <option value="aE">그들의</option>
 </select>
 
-<select id="q4_select" style="width:120pt; font-size:20pt">
+<select id="q4_select" style="width:120pt; font-size:20pt; font-family: 'Hahmlet', serif;">
   <option value="cuimhne">기억을</option>
   <option value="bóthar">길을</option>
   <option value="talamh">땅을</option>
@@ -220,11 +227,13 @@ function toggleSelect2() {
 
 <p></p>
 <img src = "https://raw.githubusercontent.com/LenaEiler/ADFB/main/2.png" style = "width:50vmin">
+<p></p>
+<font style="font-size:28pt"> 향할 것 </font>
+<p></p>
+<font style="font-size:24pt"> 불러낸 존재에게 무엇을 시킬 것인가요? </font>
+<p></p>
 
-<h2> 원할 것 </h2>
-<h3> 불러낸 존재에게 무엇을 시킬 것인가요? </h3>
-
-<select id="q5_select" style="width:120pt; font-size:20pt">
+<select id="q5_select" style="width:120pt; font-size:20pt; font-family: 'Hahmlet', serif;">
   <option value="clúdaigh">감싸라</option>
   <option value="múscail">깨워라</option>
   <option value="can">노래하라</option>
