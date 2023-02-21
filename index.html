@@ -257,11 +257,8 @@ function toggleSelect2() {
 <button id="submit" onclick="SubmitCheck()" style="height:40pt; font-size:20pt; font-family: 'Hahmlet', serif;"> 의식을 시작한다 </button>
 <button id="submit" onclick="SubmitCancel()" style="height:40pt; font-size:20pt; font-family: 'Hahmlet', serif;"> 의식을 그만둔다 </button>
 <p></p>
-<textarea type="text" id="spell" readonly placeholder="당신의 탄원입니다." style="width:80vmin; height:5vh; font-size:20pt; font-family: 'Hahmlet', serif; resize:none;" /></textarea>
+<textarea type="text" id="spell" readonly placeholder="당신의 탄원입니다.&#10;Beidh sé do dhraíocht.&#10;소리내어 읽으세요." style="width:80vmin; height:30vh; font-size:20pt; font-family: 'Hahmlet', serif; resize:none;" /></textarea>
 <p></p>
-<textarea type="text" id="spell_irish" readonly placeholder="Beidh sé do dhraíocht." style="width:80vmin; height:5vh; font-size:20pt; font-family: 'Cormorant Infant', serif; resize:none;" /></textarea>
-<p></p>
-<textarea type="text" id="spell_hangul" readonly placeholder="소리내어 읽으세요." style="width:80vmin; height:5vh; font-size:20pt; font-family: 'Hahmlet', serif; resize:none;" /></textarea>
 
 <p></p>
 <img src = "https://raw.githubusercontent.com/LenaEiler/ADFB/main/2.png" style = "width:50vmin">
@@ -557,17 +554,11 @@ function SubmitCheck() {
 
 
   var textbox_spell = document.getElementById("spell")
-  textbox_spell.value = genitive_name + vocative_name + accusative_pronoun_name + possessive_name + accusative_name + imperative_name
-  var textbox_irish = document.getElementById("spell_irish")
-  textbox_irish.value = vocative + genitive + imperative + accusative_pronoun + possessive + accusative
-  var textbox_hangul = document.getElementById("spell_hangul")
-  textbox_hangul.value = voc_hangul + gen_hangul + imp_hangul + accpro_hangul + posacu_hangul
+  textbox_spell.value = (genitive_name + vocative_name + accusative_pronoun_name + possessive_name + accusative_name + imperative_name) + "\n" + (vocative + genitive + imperative + accusative_pronoun + possessive + accusative) + "\n" + (voc_hangul + gen_hangul + imp_hangul + accpro_hangul + posacu_hangul)
 }
 
 function SubmitCancel() {
   document.getElementById("spell").value = ""
-  document.getElementById("spell_irish").value = ""
-  document.getElementById("spell_hangul").value = ""
 }
 
 </script>
