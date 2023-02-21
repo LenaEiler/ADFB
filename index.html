@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>D'Aondhraoi ~그대만의 마법사~</title>
+    
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@1,700&family=Hahmlet:wght@100;400&display=swap');
+    </style>
+
+  </head>
+<body link="#ff0000" alink="#ff0000" vlink="#ff0000" bgcolor="#eeeeee">
+
+<div style="text-align:center; color: #000000; font-family: 'Hahmlet', serif;">
+
+<h1> 에린의 요정과 알반의 드높은 대지는 그대의 탄원을 듣고 있습니다. </h1>
+<h2 style="font-family: 'Cormorant Infant', serif;"> Tá sióga na hÉireann agus tíortha arda na hAlban ag éisteacht le do bhriocht. </h2>
+
+<img src = "https://raw.githubusercontent.com/LenaEiler/ADFB/main/1.png">
+
+<h2> 속한 것 </h2>
+<h3> 불러낼 것이 무언가에 속해 있습니까? </h3>
+
+<label>
+  <input type="radio" name="q1_enable" value="true" onclick="toggleSelect()" /> 예
+</label>
+
+<label>
+  <input type="radio" name="q1_enable" value="false" onclick="toggleSelect()" checked /> 아니오
+</label>
+
+<p></p>
+
+<select id="q1_select" style="width:100px" disabled>
+  <option value="na habhann">강의</option>
+  <option value="an chlaímh">검의</option>
+  <option value="na cuimhne">기억의</option>
+  <option value="na gealaí">달의</option>
+  <option value="na tíre">대지의</option>
+  <option value="an uisce">물의</option>
+  <option value="na mara">바다의</option>
+  <option value="na gaoithe">바람의</option>
+  <option value="na tintrí">벼락의</option>
+  <option value="na réalta">별의</option>
+  <option value="na lasrach">불꽃의</option>
+  <option value="an tsolais">빛의</option>
+  <option value="an tsléibhe">산의</option>
+  <option value="an chaomhnóra">수호자의</option>
+  <option value="na haimsire">시간의</option>
+  <option value="na dorchachta">어둠의</option>
+  <option value="an laoich">영웅의</option>
+  <option value="na rí">왕의</option>
+  <option value="na sióige">요정의</option>
+  <option value="na cinniúna">운명의</option>
+  <option value="an éadóchais">절망의</option>
+  <option value="an bháis">죽음의</option>
+  <option value="na toirní">천둥의</option>
+  <option value="na gréine">태양의</option>
+  <option value="na fola">피의</option>
+  <option value="na neimhe">하늘의</option>
+  <option value="an dóchais">희망의</option>
+</select>
+
+<script>
+function toggleSelect() {
+  var select = document.getElementById("q1_select");
+  var radios = document.getElementsByName("q1_enable");
+  
+  if (radios[0].checked) {
+    select.disabled = false;
+  } else {
+    select.disabled = true;
+  }
+}
+</script>
+
+<p></p>
+<img src = "https://raw.githubusercontent.com/LenaEiler/ADFB/main/2.png">
+
+<h2> 부를 것 </h2>
+<h3> 무엇을 불러낼 것입니까? </h3>
+
+<select id="q2_select" style="width:100px">
+  <option value="A scáthán">거울이여</option>
+  <option value="A chlaíomh">검이여</option>
+  <option value="A eagla">공포여</option>
+  <option value="A chuimhne">기억이여</option>
+  <option value="A dheoir">눈물이여</option>
+  <option value="A ghealach">달이여</option>
+  <option value="A thír">대지여</option>
+  <option value="A ghaoth">바람이여</option>
+  <option value="A sciath">방패여</option>
+  <option value="A thintreach">벼락이여</option>
+  <option value="A réalta">별이여</option>
+  <option value="A fhraoch">분노여</option>
+  <option value="A lasair">불꽃이여</option>
+  <option value="A sholas">빛이여</option>
+  <option value="A chaomhnóir">수호자여</option>
+  <option value="A aimsir">시간이여</option>
+  <option value="A chroí">심장이여</option>
+  <option value="A dhorchacht">어둠이여</option>
+  <option value="A laoch">영웅이여</option>
+  <option value="A rí">왕이여</option>
+  <option value="A shióg">요정이여</option>
+  <option value="A bhás">죽음이여</option>
+  <option value="A gha">창이여</option>
+  <option value="A thoirneach">천둥이여</option>
+  <option value="A lann">칼날이여</option>
+  <option value="A ghrian">태양이여</option>
+  <option value="A fhuil">피여</option>
+  <option value="A neart">힘이여</option>
+</select>
+
+<p></p>
+<img src = "https://raw.githubusercontent.com/LenaEiler/ADFB/main/2.png">
+
+
+<h2> 향할 것 </h2>
+<h3> 특별한 사람을 향하여 부르는 것입니까? </h3>
+<label>
+  <input type="radio" name="q3_enable_pronoun_go" value="true" onclick="toggleSelect3()" /> 예
+</label>
+<label>
+  <input type="radio" name="q3_enable_pronoun_go" value="false" onclick="toggleSelect3()" checked/> 아니오
+</label>
+
+<p></p>
+
+<select id="q3_enable_pronoun" style="width:100px" disabled>
+  <option value="mé">나를</option>
+  <option value="thú">너를</option>
+  <option value="é">그를</option>
+  <option value="í">그녀를</option>
+  <option value="sinn">우리를</option>
+  <option value="sibh">너희를</option>
+  <option value="iad">그들을</option>
+</select>
+
+<script>
+    function toggleSelect3(show) {
+    var select = document.getElementById("q3_block");
+    var select2 = document.getElementById("q3_enable_pronoun");
+    var radios = document.getElementsByName("q3_enable_pronoun_go");
+    
+    if (radios[1].checked) {
+      select.style.display = "block";
+      select2.disabled = true
+    } else {
+      select.style.display = "none";
+      select2.disabled = false
+    }
+    }
+</script>
+
+<div id="q3_block">
+
+<h3> 누군가를 위하여 부르는 것입니까? </h3>
+
+<label>
+  <input type="radio" name="q3_enable" value="true" onclick="toggleSelect2()" /> 예
+</label>
+
+<label>
+  <input type="radio" name="q3_enable" value="false" onclick="toggleSelect2()" checked /> 아니오
+</label>
+
+<p></p>
+
+<select id="q3_select" disabled style="width:100px">
+  <option value="moL">나의</option>
+  <option value="doL">너의</option>
+  <option value="aL">그의</option>
+  <option value="aH">그녀의</option>
+  <option value="árE">우리의</option>
+  <option value="bhurE">너희의</option>
+  <option value="aE">그들의</option>
+</select>
+
+<select id="q4_select" style="width:100px">
+  <option value="cuimhne">기억을</option>
+  <option value="bóthar">길을</option>
+  <option value="talamh">땅을</option>
+  <option value="gach rud">모든 것을</option>
+  <option value="colainn">몸을</option>
+  <option value="creideamh">믿음을</option>
+  <option value="sciath">방패를</option>
+  <option value="fraoth">분노를</option>
+  <option value="grá">사랑을</option>
+  <option value="dochar">상처를</option>
+  <option value="croí">심장을</option>
+  <option value="muirnín">연인을</option>
+  <option value="anam">영혼을</option>
+  <option value="rí">왕을</option>
+  <option value="ainm">이름을</option>
+  <option value="namhaid">적을</option>
+  <option value="peaca">죄악을</option>
+  <option value="bás">죽음을</option>
+  <option value="fírinne">진실을</option>
+  <option value="cara">친구를</option>
+  <option value="lann">칼날을</option>
+  <option value="breith">탄생을</option>
+  <option value="dóchas">희망을</option>
+</select>
+
+</div>
+
+<script>
+function toggleSelect2() {
+  var select = document.getElementById("q3_select");
+  var radios = document.getElementsByName("q3_enable");
+  
+  if (radios[0].checked) {
+    select.disabled = false;
+  } else {
+    select.disabled = true;
+  }
+}
+</script>
+
+<p></p>
+<img src = "https://raw.githubusercontent.com/LenaEiler/ADFB/main/2.png">
+
+
+<h2> 원할 것 </h2>
+<h3> 불러낸 것에게 무엇을 시킬 것입니까? </h3>
+
+<select id="q5_select" style="width:100px">
+  <option value="clúdaigh">감싸라</option>
+  <option value="múscail">깨워라</option>
+  <option value="can">노래하라</option>
+  <option value="athbheoigh">되살려라</option>
+  <option value="clois">들어라</option>
+  <option value="coisc">막아라</option>
+  <option value="las">밝혀라</option>
+  <option value="gearr">베어라</option>
+  <option value="feic">보아라</option>
+  <option value="bris">부숴라</option>
+  <option value="glaoigh">불러라</option>
+  <option value="loisc">불태워라</option>
+  <option value="neamhnigh">섬멸하라</option>
+  <option value="geimhligh">속박하라</option>
+  <option value="giollaigh">인도하라</option>
+  <option value="mallaigh">저주하라</option>
+  <option value="maraigh">죽여라</option>
+  <option value="cosain">지켜라</option>
+  <option value="fiach">쫓아라</option>
+  <option value="sáigh">꿰뚫어라</option>
+  <option value="beannaigh">축복하라</option>
+  <option value="leigheas">치유하라</option>
+</select>
+
+<p></p>
+<img src = "https://raw.githubusercontent.com/LenaEiler/ADFB/main/2.png">
+
+<p></p>
+
+<button id="submit" onclick="SubmitCheck()" style="height:40px; font-size:20px; font-family: 'Hahmlet', serif;"> 의식을 시작한다 </button>
+<button id="submit" onclick="SubmitCancel()" style="height:40px; font-size:20px; font-family: 'Hahmlet', serif;"> 의식을 그만둔다 </button>
+<p></p>
+<textarea type="text" id="spell" rows=1 readonly placeholder="당신의 탄원입니다." style="width:720px; font-size:32px; font-family: 'Hahmlet', serif; resize:none;" /></textarea>
+<p></p>
+<textarea type="text" id="spell_irish" rows=1 readonly placeholder="Beidh sé do dhraíocht." style="width:720px; font-size:32px; font-family: 'Cormorant Infant', serif; resize:none;" /></textarea>
+<p></p>
+<textarea type="text" id="spell_hangul" rows=1 readonly placeholder="소리내어 읽으세요." style="width:720px; font-size:32px; font-family: 'Hahmlet', serif; resize:none;" /></textarea>
+
+<p></p>
+<img src = "https://raw.githubusercontent.com/LenaEiler/ADFB/main/2.png">
+<p></p>
+
+<script>
+function SubmitCheck() {
+  //속격 한국어 호출
+  var genitive_name
+  var genitive
+
+  if (document.getElementById("q1_select").disabled == false) {
+    genitive_name = document.getElementById("q1_select").options[document.getElementById("q1_select").selectedIndex].text
+    genitive = document.getElementById("q1_select").value
+  } else {
+    genitive_name = ""
+    genitive = ""
+  }
+
+  //호격 한국어 호출
+  var vocative_name = document.getElementById("q2_select").options[document.getElementById("q2_select").selectedIndex].text
+  var vocative = document.getElementById("q2_select").value
+
+  //대격 대명사 호출 (있으면)
+  var accusative_pronoun_name
+  var accusative_pronoun
+
+  if (document.getElementsByName("q3_enable_pronoun_go")[0].checked == true) {
+    accusative_pronoun_name = document.getElementById("q3_enable_pronoun").options[document.getElementById("q3_enable_pronoun").selectedIndex].text
+    accusative_pronoun = document.getElementById("q3_enable_pronoun").value
+  } else {
+    accusative_pronoun_name = ""
+    accusative_pronoun = ""
+  }
+
+  //대격 소유대명사 호출 (있으면)
+  var possessive_name
+  var possessive
+
+  if (document.getElementsByName("q3_enable_pronoun_go")[0].checked == false && document.getElementById("q3_select").disabled == false) {
+    possessive_name = document.getElementById("q3_select").options[document.getElementById("q3_select").selectedIndex].text
+    possessive = document.getElementById("q3_select").value
+  } else {
+    possessive_name = ""
+    possessive = ""
+  }
+
+  //대격 명사 호출
+  var accusative_name
+  var accusative
+
+  if (document.getElementsByName("q3_enable_pronoun_go")[0].checked == false) {
+    accusative_name = document.getElementById("q4_select").options[document.getElementById("q4_select").selectedIndex].text
+    accusative = document.getElementById("q4_select").value
+  } else {
+    accusative_name = ""
+    accusative = ""
+  }
+
+  //명령 서법 동사 호출
+  var imperative_name = document.getElementById("q5_select").options[document.getElementById("q5_select").selectedIndex].text + "."
+  var imperative = document.getElementById("q5_select").value
+
+
+  //Lenition, Eclipsis, H-prothesis
+  if (accusative_pronoun == "" && possessive != "") {
+    var initial = accusative.charAt(0)
+    var initial_2 = accusative.charAt(0) + accusative.charAt(1)
+
+    if (possessive.charAt(possessive.length - 1) == "L") {
+      //Lenition
+      if (initial == "b") {
+        accusative = accusative.replace("b", "bh")
+      } else if (initial == "c") {
+        accusative = accusative.replace("c", "ch")
+      } else if (initial == "d") {
+        accusative = accusative.replace("d", "dh")
+      } else if (initial == "f") {
+        accusative = accusative.replace("f", "fh")
+      } else if (initial == "g") {
+        accusative = accusative.replace("g", "gh")
+      } else if (initial == "m") {
+        accusative = accusative.replace("m", "mh")
+      } else if (initial == "p") {
+        accusative = accusative.replace("p", "ph")
+      } else if (initial == "t") {
+        accusative = accusative.replace("t", "th")
+      } else if (initial == "s") {
+        if (initial_2 != "sc" && initial_2 != "sf" && initial_2 != "sm" && initial_2 != "sp" && initial_2 != "st") {
+          accusative = accusative.replace("s", "sh")
+        }
+      }
+    } else if (possessive.charAt(possessive.length - 1) == "E") {
+      //Eclipsis
+      if (initial == "b") {
+        accusative = accusative.replace("b", "mb")
+      } else if (initial == "c") {
+        accusative = accusative.replace("c", "gc")
+      } else if (initial == "d") {
+        accusative = accusative.replace("d", "nd")
+      } else if (initial == "f") {
+        accusative = accusative.replace("f", "bhf")
+      } else if (initial == "g") {
+        accusative = accusative.replace("g", "ng")
+      } else if (initial == "m") {
+        accusative = accusative.replace("p", "bp")
+      } else if (initial == "p") {
+        accusative = accusative.replace("t", "dt")
+      } else if (initial == "a" || initial == "e" || initial == "i" || initial == "o" || initial == "u" || initial == "á" || initial == "é" || initial == "í" || initial == "ó" || initial == "ú") {
+        accusative = "n-" + accusative
+      }
+    } else if (possessive.charAt(possessive.length - 1) == "H") {
+      //H-Prothesis
+      if (initial == "a" || initial == "e" || initial == "i" || initial == "o" || initial == "u" || initial == "á" || initial == "é" || initial == "í" || initial == "ó" || initial == "ú") {
+        accusative = "h" + accusative
+      }
+    }
+
+    //뒷정리
+    initial_2 = accusative.charAt(0) + accusative.charAt(1)
+    possessive = possessive.replace("L", " ")
+    possessive = possessive.replace("E", " ")
+    possessive = possessive.replace("H", " ")
+
+    if (initial == "a" || initial == "e" || initial == "i" || initial == "o" || initial == "u" || initial == "á" || initial == "é" || initial == "í" || initial == "ó" || initial == "ú" || initial_2 == "fh") {
+      if (possessive == "mo ") {
+        possessive = "m'"
+      } else if (possessive == "do ") {
+        possessive = "d'"
+      }
+    }
+  }
+
+  //read
+
+  //vocative
+  var voc_hangul = ""
+
+  var Voc = ["A scáthán", "A chlaíomh", "A eagla", "A chuimhne", "A dheoir", "A ghealach", "A thír", "A ghaoth", "A sciath", "A thintreach", "A réalta", "A fhraoch", "A lasair", "A sholas", "A chaomhnóir", "A aimsir", "A chroí", "A dhorchacht", "A laoch", "A rí", "A shióg", "A bhás", "A gha", "A thoirneach", "A lann", "A ghrian", "A fhuil", "A neart"]
+  var VocHan = ["아 스카한", "아 흘리오", "아 야글라", "아 히브네", "아 요르", "아 얄라흐", "아 히르", "아 이", "아 스키아", "아 힌트랴흐", "아 렐타", "아 리흐", "아 라사르", "아 홀라스", "아 하오노르", "아 암시르", "아 흐리", "아 고르하흐트", "아 라오흐", "아 리", "아 히오그", "아 와스", "아 가", "아 호르냐흐", "아 란", "아 이리안", "아 일", "아 냐르트"]
+
+  for (var i in Voc) {
+    if (vocative == Voc[i]) {
+      voc_hangul = VocHan[i]
+      break
+    }
+  }
+
+  //genitive
+  var gen_hangul = ""
+
+  var Gen = ["", "na habhann", "an chlaímh", "na cuimhne", "na gealaí", "na tíre", "an uisce", "na mara", "na gaoithe", "na tintrí", "na réalta", "na lasrach", "an tsolais", "an tsléibhe", "an chaomhnóra", "na haimsire", "na dorchachta", "an laoich", "na rí", "na sióige", "na cinniúna", "an éadóchais", "an bháis", "na toirní", "na gréine", "na fola", "na neimhe", "an dóchais"]
+  var GenHan = ["", "나 하완", "안 흘리오", "나 키브네", "나 기알리", "나 티레", "안 이쉬케", "나 마라", "나 기헤", "나 틴트리", "나 렐타", "나 라스라흐", "안 톨라쉬", "안 틀레베", "안 하오노라", "나 함시레", "나 도르하흐타", "안 리흐", "나 리", "나 시오게", "나 키뉴나", "안 에도하쉬", "안 와쉬", "나 토르니", "나 그레네", "나 폴라", "나 네베", "안 도하쉬"]
+
+  for (var i in Gen) {
+    if (genitive == Gen[i]) {
+      gen_hangul = GenHan[i]
+      break
+    }
+  }
+
+  //acc_pronoun
+  var accpro_hangul = ""
+
+  var AccPro = ["", "mé", "thú", "é", "í", "sinn", "sibh", "iad"]
+  var AccProHan = ["", "메", "후", "에", "이", "신", "시브", "야드"]
+
+  for (var i in AccPro) {
+    if (accusative_pronoun == AccPro[i]) {
+      accpro_hangul = AccProHan[i]
+      break
+    }
+  }
+
+  //possessive + accusative
+  var posacu_hangul = ""
+
+  var PosAcu = ["", "cuimhne", "mo chuimhne", "do chuimhne", "a chuimhne", "a cuimhne", "ár gcuimhne", "bhur gcuimhne", "a gcuimhne", "bóthar", "mo bhóthar", "do bhóthar", "a bhóthar", "a bóthar", "ár mbóthar", "bhur mbóthar", "a mbóthar", "talamh", "mo thalamh", "do thalamh", "a thalamh", "a talamh", "ár dtalamh", "bhur dtalamh", "a dtalamh", "gach rud", "mo gach rud", "do gach rud", "a gach rud", "a gach rud", "ár gach rud", "bhur gach rud", "a gach rud", "colainn", "mo cholainn", "do cholainn", "a cholainn", "a colainn", "ár gcolainn", "bhur gcolainn", "a gcolainn", "creideamh", "mo chreideamh", "do chreideamh", "a chreideamh", "a creideamh", "ár gcreideamh", "bhur gcreideamh", "a gcreideamh", "sciath", "mo sciath", "do sciath", "a sciath", "a sciath", "ár sciath", "bhur sciath", "a sciath", "fraoth", "mo fhraoth", "do fhraoth", "a fhraoth", "a fraoth", "ár bhfraoth", "bhur bhfraoth", "a bhfraoth", "grá", "mo ghrá", "do ghrá", "a ghrá", "a grá", "ár ngrá", "bhur ngrá", "a ngrá", "dochar", "mo dhochar", "do dhochar", "a dhochar", "a dochar", "ár ndochar", "bhur ndochar", "a ndochar", "croí", "mo chroí", "do chroí", "a chroí", "a croí", "ár gcroí", "bhur gcroí", "a gcroí", "muirnín", "mo mhuirnín", "do mhuirnín", "a mhuirnín", "a muirnín", "ár muirnín", "bhur muirnín", "a muirnín", "anam", "m'anam", "d'anam", "a anam", "a hanam", "ár n-anam", "bhur n-anam", "a n-anam", "rí", "mo rí", "do rí", "a rí", "a rí", "ár rí", "bhur rí", "a rí", "ainm", "m'ainm", "d'ainm", "a ainm", "a hainm", "ár n-ainm", "bhur n-ainm", "a n-ainm", "namhaid", "mo namhaid", "do namhaid", "a namhaid", "a namhaid", "ár namhaid", "bhur namhaid", "a namhaid", "peaca", "mo pheaca", "do pheaca", "a pheaca", "a peaca", "ár bpeaca", "bhur bpeaca", "a bpeaca", "bás", "mo bhás", "do bhás", "a bhás", "a bás", "ár mbás", "bhur mbás", "a mbás", "fírinne", "m'fhírinne", "d'fhírinne", "a fhírinne", "a fírinne", "ár bhfírinne", "bhur bhfírinne", "a bhfírinne", "cara", "mo chara", "do chara", "a chara", "a cara", "ár gcara", "bhur gcara", "a gcara", "lann", "mo lann", "do lann", "a lann", "a lann", "ár lann", "bhur lann", "a lann", "breith", "mo bhreith", "do bhreith", "a bhreith", "a breith", "ár mbreith", "bhur mbreith", "a mbreith", "dóchas", "mo dhóchas", "do dhóchas", "a dhóchas", "a dóchas", "ár ndóchas", "bhur ndóchas", "a ndóchas"]
+  var PosAcuHan = ["", "키브네", "모 히브네", "도 히브네", "아 히브네", "아 키브네", "아르 기브네", "부르 기브네", "아 기브네", "보하르", "모 보하르", "도 보하르", "아 보하르", "아 보하르", "아르 모하르", "부르 모하르", "아 모하르", "탈라우", "모 할라우", "도 할라우", "아 할라우", "아 탈라우", "아르 달라우", "부르 달라우", "아 달라우", "가흐 루드", "모 가흐 루드", "도 가흐 루드", "아 가흐 루드", "아 가흐 루드", "아릉 아흐 루드", "부릉 아흐 루드", "앙 아흐 루드", "콜란", "모 홀란", "도 홀란", "아 홀란", "아 콜란", "아르 골란", "부르 골란", "아 골란", "크레디우", "모 흐레디우", "도 흐레디우", "아 흐레디우", "아 크레디우", "아르 그레디우", "부르 그레디우", "아 그레디우", "스키아", "모 스키아", "도 스키아", "아 스키아", "아 스키아", "아르 스키아", "부르 스키아", "아 스키아", "프리", "모 리", "도 리", "아 리", "아 프리", "아르 브리", "부르 브리", "아 브리", "그라", "모 그라", "도 그라", "아 그라", "아 그라", "아릉 라", "부릉 라", "앙 라", "도하르", "모 고하르", "도 고하르", "아 고하르", "아 도하르", "아르 노하르", "부르 노하르", "아 노하르", "크리", "모 흐리", "도 흐리", "아 흐리", "아 크리", "아르 그리", "부르 그리", "아 그리", "미르닌", "모 위르닌", "도 위르닌", "아 위르닌", "아 미르닌", "아르 미르닌", "부르 미르닌", "아 미르닌", "아남", "마남", "다남", "아 아남", "아 하남", "아르 나남", "부르 나남", "아 나남", "리", "모 리", "도 리", "아 리", "아 리", "아르 리", "부르 리", "아 리", "아넴", "마넴", "다넴", "아 아넴", "아 하넴", "아르 나넴", "부르 나넴", "아 나넴", "나와드", "모 나와드", "도 나와드", "아 나와드", "아 나와드", "아르 나와드", "부르 나와드", "아 나와드", "파카", "모 파카", "도 파카", "아 파카", "아 파카", "아르 바카", "부르 바카", "아 바카", "바스", "모 와스", "도 와스", "아 와스", "아 바스", "아르 마스", "부르 마스", "아 마스", "피리네", "미리네", "디리네", "아 이리네", "아 피리네", "아르 비리네", "부르 비리네", "아 비리네", "카라", "모 하라", "도 하라", "아 하라", "아 카라", "아르 가라", "부르 가라", "아 가라", "란", "모 란", "도 란", "아 란", "아 란", "아르 란", "부르 란", "아 란", "브레", "모 브레", "도 브레", "아 브레", "아 브레", "아르 므레", "부르 므레", "아 므레", "도하스", "모 고하스", "도 고하스", "아 고하스", "아 도하스", "아르 노하스", "부르 노하스", "아 노하스"]
+
+  for (var i in PosAcu) {
+    if (possessive + accusative == PosAcu[i]) {
+      posacu_hangul = PosAcuHan[i]
+      break
+    }
+  }
+
+  //imperative
+  var imp_hangul = ""
+
+  var Imp = ["clúdaigh", "múscail", "can", "athbheoigh", "clois", "coisc", "las", "gearr", "feic", "bris", "glaoigh", "loisc", "neamhnigh", "geimhligh", "giollaigh", "mallaigh", "maraigh", "cosain", "fiach", "sáigh", "beannaigh", "leigheas"]
+  var ImpHan = ["클루다이", "무스칼", "칸", "아베오이", "클레쉬", "케쉬크", "라스", "기아르", "페크", "브리쉬", "글리", "레쉬크", "니아우니", "기블리", "기올라이", "말라이", "마라이", "코산", "피아흐", "사이", "비아나이", "레야스"]
+
+  for (var i in Imp) {
+    if (imperative == Imp[i]) {
+      imp_hangul = ImpHan[i]
+      break
+    }
+  }
+
+  //le
+  if (imperative == "éist le" && accusative_pronoun != "") {
+    imperative = "éist"
+    imp_hangul = "에쉬트"
+
+    if (accusative_pronoun == "mé") {
+      accusative_pronoun = "liom"
+      accpro_hangul = "리움"
+    } else if (accusative_pronoun == "thú") {
+      accusative_pronoun = "leat"
+      accpro_hangul = "리아트"
+    } else if (accusative_pronoun == "é") {
+      accusative_pronoun = "leis"
+      accpro_hangul = "레쉬"
+    } else if (accusative_pronoun == "í") {
+      accusative_pronoun = "léi"
+      accpro_hangul = "레"
+    } else if (accusative_pronoun == "sinn") {
+      accusative_pronoun = "linn"
+      accpro_hangul = "린"
+    } else if (accusative_pronoun == "sibh") {
+      accusative_pronoun = "libh"
+      accpro_hangul = "리브"
+    } else if (accusative_pronoun == "iad") {
+      accusative_pronoun = "leo"
+      accpro_hangul = "리오"
+    }
+  }
+
+  if ((imperative == "éist le") && (possessive == "mo " || possessive == "do " || possessive == "a " || possessive == "m'" || possessive == "d'" || possessive == "ár ")) {
+    imperative = "éist"
+    imp_hangul = "에쉬트"
+
+    if (possessive == "mo ") {
+      possessive = "lem "
+      posacu_hangul = "렘 "
+    } else if (possessive == "do ") {
+      possessive = "led "
+      posacu_hangul = "레드 "
+    } else if (possessive == "a ") {
+      possessive = "lena "
+      posacu_hangul = "레나 "
+    } else if (possessive == "m'") {
+      possessive = "lem "
+      posacu_hangul = "렘 "
+    } else if (possessive == "d'") {
+      possessive = "led "
+      posacu_hangul = "레드 "
+    } else if (possessive == "ár") {
+      possessive = "lenár"
+      posacu_hangul = "레나르 "
+    }
+
+    for (var i in PosAcu) {
+      if (accusative == PosAcu[i]) {
+        posacu_hangul = posacu_hangul + PosAcuHan[i]
+        break
+     }
+    }
+
+  }
+
+  //쉼표와 공백
+  if (genitive == "") {
+    vocative = vocative + ", "
+    voc_hangul = voc_hangul + ", "
+  } else {
+    vocative = vocative + " "
+    voc_hangul = voc_hangul + " "
+    genitive = genitive + ", "
+    gen_hangul = gen_hangul + ", "
+  }
+  imperative = imperative + " "
+  imp_hangul = imp_hangul + " "
+  accusative = accusative + "."
+  posacu_hangul = posacu_hangul + "."
+
+  if (genitive_name != "") {
+    genitive_name = genitive_name + " "
+  }
+  if (vocative_name != "") {
+    vocative_name = vocative_name + ", "
+  }
+  if (accusative_pronoun_name != "") {
+    accusative_pronoun_name = accusative_pronoun_name + " "
+  }
+  if (possessive_name != "") {
+    possessive_name = possessive_name + " "
+  }
+  if (accusative_name != "") {
+    accusative_name = accusative_name + " "
+  }
+
+
+  var textbox_spell = document.getElementById("spell")
+  textbox_spell.value = genitive_name + vocative_name + accusative_pronoun_name + possessive_name + accusative_name + imperative_name
+  var textbox_irish = document.getElementById("spell_irish")
+  textbox_irish.value = vocative + genitive + imperative + accusative_pronoun + possessive + accusative
+  var textbox_hangul = document.getElementById("spell_hangul")
+  textbox_hangul.value = voc_hangul + gen_hangul + imp_hangul + accpro_hangul + posacu_hangul
+}
+
+function SubmitCancel() {
+  document.getElementById("spell").value = ""
+  document.getElementById("spell_irish").value = ""
+  document.getElementById("spell_hangul").value = ""
+}
+
+</script>
+
+<p>*</p>
+<p>*</p>
+<p>*</p>
+<p>*</p>
+<p>*</p>
+<p>*</p>
+<img src = "https://raw.githubusercontent.com/LenaEiler/ADFB/main/2.png">
+
+<h2>더 많은 존재의 이름을 알고 싶으신 분들은 <a href = "https://tumblbug.com/help242" target = "blank">이곳을</a> 방문해 주세요.</h2>
+<p>*</p>
+<p>*</p>
+<p>*</p>
+<h3>제작 <a href = "https://twitter.com/lena_briongloid" target = "blank">유월</a></h3>
+<h3>제작자 이외의 분들은 본 문서를 배포 및 게시할 수 없습니다.</h3>
+
+</div>
+
+</body>
+</html>
