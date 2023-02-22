@@ -37,7 +37,10 @@
 <select id="q1_select" style="width:120pt; font-size:20pt; font-family: 'Hahmlet', serif;" disabled>
   <option value="na habhann">강의</option>
   <option value="an chlaímh">검의</option>
+  <option value="an gheimhridh">겨울의</option>
   <option value="na cuimhne">기억의</option>
+  <option value="an bhlátha">꽃의</option>
+  <option value="na brionglóide">꿈의</option>
   <option value="na gealaí">달의</option>
   <option value="na tíre">대지의</option>
   <option value="an uisce">물의</option>
@@ -90,6 +93,7 @@ function toggleSelect() {
   <option value="A chlaíomh">검이여</option>
   <option value="A eagla">공포여</option>
   <option value="A chuimhne">기억이여</option>
+  <option value="A bhrionglóid">꿈이여</option>
   <option value="A dheoir">눈물이여</option>
   <option value="A ghealach">달이여</option>
   <option value="A thír">대지여</option>
@@ -406,8 +410,8 @@ function SubmitCheck() {
   //vocative
   var voc_hangul = ""
 
-  var Voc = ["A scáthán", "A chlaíomh", "A eagla", "A chuimhne", "A dheoir", "A ghealach", "A thír", "A ghaoth", "A sciath", "A thintreach", "A réalta", "A fhraoch", "A lasair", "A sholas", "A chaomhnóir", "A aimsir", "A chroí", "A dhorchacht", "A laoch", "A rí", "A shióg", "A bhás", "A gha", "A thoirneach", "A lann", "A ghrian", "A fhuil", "A neart"]
-  var VocHan = ["아 스카한", "아 흘리오", "아 야글라", "아 히브네", "아 요르", "아 얄라흐", "아 히르", "아 이", "아 스키아", "아 힌트랴흐", "아 렐타", "아 리흐", "아 라사르", "아 홀라스", "아 하오노르", "아 암시르", "아 흐리", "아 고르하흐트", "아 라오흐", "아 리", "아 히오그", "아 와스", "아 가", "아 호르냐흐", "아 란", "아 이리안", "아 일", "아 냐르트"]
+  var Voc = ["A scáthán", "A chlaíomh", "A eagla", "A chuimhne", "A bhrionglóid", "A dheoir", "A ghealach", "A thír", "A ghaoth", "A sciath", "A thintreach", "A réalta", "A fhraoch", "A lasair", "A sholas", "A chaomhnóir", "A aimsir", "A chroí", "A dhorchacht", "A laoch", "A rí", "A shióg", "A bhás", "A gha", "A thoirneach", "A lann", "A ghrian", "A fhuil", "A neart"]
+  var VocHan = ["아 스카한", "아 흘리오", "아 야글라", "아 히브네", "아 브링로드", "아 요르", "아 얄라흐", "아 히르", "아 이", "아 스키아", "아 힌트랴흐", "아 렐타", "아 리흐", "아 라사르", "아 홀라스", "아 하오노르", "아 암시르", "아 흐리", "아 고르하흐트", "아 라오흐", "아 리", "아 히오그", "아 와스", "아 가", "아 호르냐흐", "아 란", "아 이리안", "아 일", "아 냐르트"]
 
   for (var i in Voc) {
     if (vocative == Voc[i]) {
@@ -419,8 +423,8 @@ function SubmitCheck() {
   //genitive
   var gen_hangul = ""
 
-  var Gen = ["", "na habhann", "an chlaímh", "na cuimhne", "na gealaí", "na tíre", "an uisce", "na mara", "na gaoithe", "na tintrí", "na réalta", "na lasrach", "an tsolais", "an tsléibhe", "an chaomhnóra", "na haimsire", "na dorchachta", "an laoich", "na rí", "na sióige", "na cinniúna", "an éadóchais", "an bháis", "na toirní", "na gréine", "na fola", "na neimhe", "an dóchais"]
-  var GenHan = ["", "나 하완", "안 흘리오", "나 키브네", "나 기알리", "나 티레", "안 이쉬케", "나 마라", "나 기헤", "나 틴트리", "나 렐타", "나 라스라흐", "안 톨라쉬", "안 틀레베", "안 하오노라", "나 함시레", "나 도르하흐타", "안 리흐", "나 리", "나 시오게", "나 키뉴나", "안 에도하쉬", "안 와쉬", "나 토르니", "나 그레네", "나 폴라", "나 네베", "안 도하쉬"]
+  var Gen = ["", "na habhann", "an chlaímh", "an gheimhridh", "na cuimhne", "an bhlátha", "na brionglóide", "na gealaí", "na tíre", "an uisce", "na mara", "na gaoithe", "na tintrí", "na réalta", "na lasrach", "an tsolais", "an tsléibhe", "an chaomhnóra", "na haimsire", "na dorchachta", "an laoich", "na rí", "na sióige", "na cinniúna", "an éadóchais", "an bháis", "na toirní", "na gréine", "na fola", "na neimhe", "an dóchais"]
+  var GenHan = ["", "나 하완", "안 흘리오", "안 이브리", "나 키브네", "안 블라하", "나 브링로데", "나 기알리", "나 티레", "안 이쉬케", "나 마라", "나 기헤", "나 틴트리", "나 렐타", "나 라스라흐", "안 톨라쉬", "안 틀레베", "안 하오노라", "나 함시레", "나 도르하흐타", "안 리흐", "나 리", "나 시오게", "나 키뉴나", "안 에도하쉬", "안 와쉬", "나 토르니", "나 그레네", "나 폴라", "나 네베", "안 도하쉬"]
 
   for (var i in Gen) {
     if (genitive == Gen[i]) {
