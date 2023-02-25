@@ -341,6 +341,7 @@ function SubmitCheck() {
   if (accusative_pronoun == "" && possessive != "") {
     var initial = accusative.charAt(0)
     var initial_2 = accusative.charAt(0) + accusative.charAt(1)
+    var initial_3 = accusative.charAt(0) + accusative.charAt(1) + accusative.charAt(2)
 
     if (possessive.charAt(possessive.length - 1) == "L") {
       //Lenition
@@ -397,7 +398,7 @@ function SubmitCheck() {
     possessive = possessive.replace("E", " ")
     possessive = possessive.replace("H", " ")
 
-    if (initial == "a" || initial == "e" || initial == "i" || initial == "o" || initial == "u" || initial == "á" || initial == "é" || initial == "í" || initial == "ó" || initial == "ú" || initial_2 == "fh") {
+    if (initial == "a" || initial == "e" || initial == "i" || initial == "o" || initial == "u" || initial == "á" || initial == "é" || initial == "í" || initial == "ó" || initial == "ú" || (initial_2 == "fh" && initial_3 != "fhr")) {
       if (possessive == "mo ") {
         possessive = "m'"
       } else if (possessive == "do ") {
